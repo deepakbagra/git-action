@@ -12,5 +12,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run test
-        run: echo "Hello from GitHub Actions!"
+      - name: Inspect runner
+        run: |
+            echo "Hello from GitHub Actions!"
+            echo "Operating system:"
+            uname -a
+            echo "Current directory:"
+            pwd
+            echo "User:"
+            whoami
+            echo "Files:"
+            ls -la
