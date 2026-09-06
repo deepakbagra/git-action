@@ -16,6 +16,5 @@ jobs:
     steps:
       - name: Show event information
         run: |
-          echo "Event: ${{ github.event_name }}"
-          echo "Branch: ${{ github.ref }}"
-          echo "Commit: ${{ github.sha }}"
+            echo "Event: ${{ github.event_name }}"
+            echo "Hello from feature branch"
